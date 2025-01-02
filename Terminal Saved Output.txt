@@ -1,0 +1,352 @@
+Last login: Wed Oct 23 16:57:22 on ttys012
+(base) jeevanvathielil@Jeevans-MacBook-Air ~ % ssh je129517@eustis.eecs.ucf.edu
+
+Welcome to eustis.eecs.ucf.edu.
+
+Please use your NID and NID password to log in.
+Your NID should be 2 letters followed by 6 digits.
+
+See http://t.cs.ucf.edu/help/eustis  for additional instructions.
+
+je129517@eustis.eecs.ucf.edu's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-116-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Local docs:     http://t.cs.ucf.edu/help/eustis
+*** System restart required ***
+Last login: Thu Oct 24 13:10:40 2024 from 10.32.33.231
+je129517@net1547:~$ git clone https://www.cs.ucf.edu/~gazzillo/teaching/cop3402fall24/repos/calc.git/
+Cloning into 'calc'...
+je129517@net1547:~$ cd calc/
+je129517@net1547:~/calc$ git remote add submission gitolite3@eustis3.eecs.ucf.edu:cop3402/je129517/calc
+je129517@net1547:~/calc$ git push --set-upstream submission master
+
+Welcome to eustis.eecs.ucf.edu.
+
+Please use your NID and NID password to log in.
+
+See http://t.cs.ucf.edu/help/eustis  for additional instructions.
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/gitolite3/repositories/cop3402/je129517/calc.git/
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (17/17), 2.15 KiB | 1.08 MiB/s, done.
+Total 17 (delta 2), reused 0 (delta 0), pack-reused 0
+To eustis3.eecs.ucf.edu:cop3402/je129517/calc
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'submission'.
+je129517@net1547:~/calc$ client_loop: send disconnect: Broken pipe
+(base) jeevanvathielil@Jeevans-MacBook-Air ~ % vim calc.c
+
+zsh: suspended  vim calc.c
+(base) jeevanvathielil@Jeevans-MacBook-Air ~ % git rm calc.c
+fatal: pathspec 'calc.c' did not match any files
+(base) jeevanvathielil@Jeevans-MacBook-Air ~ % ssh je129517@eustis.eecs.ucf.edu
+
+Welcome to eustis.eecs.ucf.edu.
+
+Please use your NID and NID password to log in.
+Your NID should be 2 letters followed by 6 digits.
+
+See http://t.cs.ucf.edu/help/eustis  for additional instructions.
+
+je129517@eustis.eecs.ucf.edu's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-116-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Local docs:     http://t.cs.ucf.edu/help/eustis
+*** System restart required ***
+Last login: Tue Oct 29 12:05:39 2024 from 10.32.24.247
+je129517@net1547:~$ vim Calc.py
+
+[1]+  Stopped                 vim Calc.py
+je129517@net1547:~$ cd Calc.py
+-bash: cd: Calc.py: No such file or directory
+je129517@net1547:~$ ls
+calc   homework  hw3.tar  Makefile  myls.c  mysh_new
+hello  hw3       make     myls      mysh
+je129517@net1547:~$ vim Calc.py
+
+[2]+  Stopped                 vim Calc.py
+je129517@net1547:~$ vim Calc.py
+
+[3]+  Stopped                 vim Calc.py
+je129517@net1547:~$ ls
+calc   homework  hw3.tar  Makefile  myls.c  mysh_new
+hello  hw3       make     myls      mysh
+je129517@net1547:~$ cd calc
+je129517@net1547:~/calc$ ls
+calc  grammar  Pipfile  pyproject.toml
+je129517@net1547:~/calc$ cd calc
+je129517@net1547:~/calc/calc$ ls
+__init__.py
+je129517@net1547:~/calc/calc$ cd __init__.py
+-bash: cd: __init__.py: Not a directory
+je129517@net1547:~/calc/calc$ c..
+c..: command not found
+je129517@net1547:~/calc/calc$ emacs Calc.py
+je129517@net1547:~/calc/calc$ pip3 install --user pipenv
+Collecting pipenv
+  Downloading pipenv-2024.2.0-py3-none-any.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 13.8 MB/s eta 0:00:00
+Collecting setuptools>=67
+  Downloading setuptools-75.3.0-py3-none-any.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 22.2 MB/s eta 0:00:00
+Requirement already satisfied: certifi in /usr/lib/python3/dist-packages (from pipenv) (2020.6.20)
+Collecting packaging>=22
+  Downloading packaging-24.1-py3-none-any.whl (53 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 KB 13.2 MB/s eta 0:00:00
+Collecting virtualenv>=20.24.2
+  Downloading virtualenv-20.27.1-py3-none-any.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 19.8 MB/s eta 0:00:00
+Collecting filelock<4,>=3.12.2
+  Downloading filelock-3.16.1-py3-none-any.whl (16 kB)
+Collecting platformdirs<5,>=3.9.1
+  Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Collecting distlib<1,>=0.3.7
+  Downloading distlib-0.3.9-py2.py3-none-any.whl (468 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 469.0/469.0 KB 19.7 MB/s eta 0:00:00
+Installing collected packages: distlib, setuptools, platformdirs, packaging, filelock, virtualenv, pipenv
+  WARNING: The script virtualenv is installed in '/home/net/je129517/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts pipenv and pipenv-resolver are installed in '/home/net/je129517/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed distlib-0.3.9 filelock-3.16.1 packaging-24.1 pipenv-2024.2.0 platformdirs-4.3.6 setuptools-75.3.0 virtualenv-20.27.1
+je129517@net1547:~/calc/calc$ pipenv install -e ./
+Command 'pipenv' not found, but can be installed with:
+apt install pipenv
+Please ask your administrator.
+je129517@net1547:~/calc/calc$ apt install pipenv
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+je129517@net1547:~/calc/calc$ pipenv install -e ./
+Command 'pipenv' not found, but can be installed with:
+apt install pipenv
+Please ask your administrator.
+je129517@net1547:~/calc/calc$ exit
+logout
+There are stopped jobs.
+je129517@net1547:~/calc/calc$ exit
+logout
+
+Resolving dependencies...
+✔ Success!
+Locking [dev-packages] dependencies...
+Updated Pipfile.lock (a294591cf7280d443fb66f2df201953f466c2d7c6c7297403cfa401c298268af)!
+Installing dependencies from Pipfile.lock (8268af)...
+All dependencies are now up-to-date!
+Installing dependencies from Pipfile.lock (8268af)...
+(je129517) je129517@net1547:~/calc_new$ pipenv shell
+Shell for /home/net/je129517/.local/share/virtualenvs/je129517-yVsFeFr2 already activated.
+New shell not activated to avoid nested environments.
+(je129517) je129517@net1547:~/calc_new$ make -C grammar/
+make: Entering directory '/home/net/je129517/calc_new/grammar'
+make: *** No rule to make target 'Arithmetic.g4', needed by 'ArithmeticParser.py'.  Stop.
+make: Leaving directory '/home/net/je129517/calc_new/grammar'
+(je129517) je129517@net1547:~/calc_new$ python3 calc/Calc/Calc.py << EOT
+> a := 2
+> x := a + 2
+> y := 3
+> z := x % y
+> EOT
+python3: can't open file '/home/net/je129517/calc_new/calc/Calc/Calc.py': [Errno 2] No such file or directory
+(je129517) je129517@net1547:~/calc_new$ client_loop: send disconnect: Broken pipe
+(base) jeevanvathielil@Jeevans-MacBook-Air ~ % 
+  [Restored Nov 14, 2024 at 11:37:19 AM]
+Last login: Sun Nov  3 21:25:26 on console
+Restored session: Sun Nov  3 19:56:04 EST 2024
+(base) jeevanvathielil@Jeevans-MacBook-Air ~ % ssh je129517@eustis.eecs.ucf.edu
+
+Welcome to eustis.eecs.ucf.edu.
+
+Please use your NID and NID password to log in.
+Your NID should be 2 letters followed by 6 digits.
+
+See http://t.cs.ucf.edu/help/eustis  for additional instructions.
+
+je129517@eustis.eecs.ucf.edu's password: 
+Permission denied, please try again.
+je129517@eustis.eecs.ucf.edu's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-116-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Local docs:     http://t.cs.ucf.edu/help/eustis
+*** System restart required ***
+Last login: Tue Oct 29 16:04:05 2024 from 10.32.24.247
+je129517@net1547:~$ git clone https://www.cs.ucf.edu/~gazzillo/teaching/cop3402fall24/repos/compiler-template.git/ codegen1
+Cloning into 'codegen1'...
+Fetching objects: 12, done.
+je129517@net1547:~$ cd codegen1/
+je129517@net1547:~/codegen1$ git remote add submission gitolite3@eustis3.eecs.ucf.edu:cop3402/je129517/codegen1
+je129517@net1547:~/codegen1$ git push --set-upstream submission master
+
+Welcome to eustis.eecs.ucf.edu.
+
+Please use your NID and NID password to log in.
+
+See http://t.cs.ucf.edu/help/eustis  for additional instructions.
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/gitolite3/repositories/cop3402/je129517/codegen1.git/
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 4.27 KiB | 2.13 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To eustis3.eecs.ucf.edu:cop3402/je129517/codegen1
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'submission'.
+je129517@net1547:~/codegen1$ pipenv install -e ./
+Creating a virtualenv for this project
+Pipfile: /home/net/je129517/codegen1/Pipfile
+Using default python from /usr/bin/python33.10.12 to create virtualenv...
+⠦ Creating virtual environment...created virtual environment CPython3.10.12.final.0-64 in 2657ms
+  creator CPython3Posix(dest=/home/net/je129517/.local/share/virtualenvs/codegen1-INw_PdrU, 
+clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, 
+app_data_dir=/home/net/je129517/.local/share/virtualenv)
+    added seed packages: pip==24.3.1, setuptools==75.2.0, wheel==0.44.0
+  activators 
+BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: /home/net/je129517/.local/share/virtualenvs/codegen1-INw_PdrU
+Pipfile.lock not found, creating...
+Locking [packages] dependencies...
+Building requirements...
+Resolving dependencies...
+✔ Success!
+Locking [dev-packages] dependencies...
+Updated Pipfile.lock (156dcf878e5131768c95ccd12106561c0b8f9b6ddb9947b9f89f1386a9b98203)!
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+Installing -e ./...
+✔ Installation Succeeded
+Running $ pipenv lock then $ pipenv sync.
+Locking [packages] dependencies...
+Building requirements...
+Resolving dependencies...
+✔ Success!
+Locking [dev-packages] dependencies...
+Updated Pipfile.lock (156dcf878e5131768c95ccd12106561c0b8f9b6ddb9947b9f89f1386a9b98203)!
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+Installing dependencies from Pipfile.lock (b98203)...
+All dependencies are now up-to-date!
+Installing dependencies from Pipfile.lock (b98203)...
+je129517@net1547:~/codegen1$ pipenv shell
+Launching subshell in virtual environment...
+je129517@net1547:~/codegen1$  source /home/net/je129517/.local/share/virtualenvs/codegen1-INw_PdrU/bin/activate
+(codegen1) je129517@net1547:~/codegen1$ make -C grammar/
+make: Entering directory '/home/net/je129517/codegen1/grammar'
+wget https://www.antlr.org/download/antlr-4.13.1-complete.jar
+--2024-11-14 11:42:12--  https://www.antlr.org/download/antlr-4.13.1-complete.jar
+Resolving www.antlr.org (www.antlr.org)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to www.antlr.org (www.antlr.org)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2139203 (2.0M) [application/java-archive]
+Saving to: ‘antlr-4.13.1-complete.jar’
+
+antlr-4.13.1-complete.ja 100%[==================================>]   2.04M  --.-KB/s    in 0.1s    
+
+2024-11-14 11:42:12 (16.3 MB/s) - ‘antlr-4.13.1-complete.jar’ saved [2139203/2139203]
+
+CLASSPATH=antlr-4.13.1-complete.jar: java org.antlr.v4.Tool -Dlanguage=Python3 SimpleIR.g4
+make: Leaving directory '/home/net/je129517/codegen1/grammar'
+(codegen1) je129517@net1547:~/codegen1$ ls
+compiler  grammar  Pipfile  Pipfile.lock  pyproject.toml
+(codegen1) je129517@net1547:~/codegen1$ touch CodeGEN.PY
+(codegen1) je129517@net1547:~/codegen1$ ls
+CodeGEN.PY  compiler  grammar  Pipfile  Pipfile.lock  pyproject.toml
+(codegen1) je129517@net1547:~/codegen1$ cd CodeGen.py
+bash: cd: CodeGen.py: No such file or directory
+(codegen1) je129517@net1547:~/codegen1$ touch CodeGen.py
+(codegen1) je129517@net1547:~/codegen1$ cd CodeGen.py
+bash: cd: CodeGen.py: Not a directory
+(codegen1) je129517@net1547:~/codegen1$ vim CodeGen.py
+
+from grammar.SimpleIRParser import SimpleIRParser
+from grammar.SimpleIRListener import SimpleIRListener
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+# This class defines a complete listener for a parse tree produced by SimpleIRParser.
+class CodeGen(SimpleIRListener):
+    def __init__(self, filename, outfile):
+        self.filename = filename
+        self.outfile = outfile
+        self.symtab = {}
+        self.bytewidth = 8
+
+    def enterUnit(self, ctx:SimpleIRParser.UnitContext):
+        """Creates the object file sections"""
+        self.outfile.write(
+f'''\t.file "{self.filename}"
+\t.section .note.GNU-stack,"",@progbits
+\t.text
+''')
+
+    def enterFunction(self, ctx:SimpleIRParser.FunctionContext):
+        """Emits the label and prologue"""
+        # TODO
+
+    def exitFunction(self, ctx:SimpleIRParser.FunctionContext):
+        """Emits the epilogue"""
+        # TODO
+
+    def enterReturn(self, ctx:SimpleIRParser.ReturnContext):
+        """Sets the return value"""
+        # TODO
+
+    def enterCall(self, ctx:SimpleIRParser.CallContext):
+        """Function call"""
+        # TODO
+
+
+def main():
+    import sys
+    if len(sys.argv) > 1:
+        filepath = sys.argv[1]
+        input_stream = FileStream(filepath)
+        filename = os.path.basename(filepath)
+    else:
+        input_stream = StdinStream()
+        filename = "stdin"
+
+    lexer = SimpleIRLexer(input_stream)
+    stream = CommonTokenStream(lexer)
+    parser = SimpleIRParser(stream)
+    tree = parser.unit()
+    if parser.getNumberOfSyntaxErrors() > 0:
+        print("syntax errors")
+        exit(1)
+    # print(tree.toStringTree())
+    walker = ParseTreeWalker()
+    walker.walk(CodeGen(filename, sys.stdout), tree)
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+                                                                                                                                                                                          64,38         Bot
